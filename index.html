@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessible Image Gallery</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav aria-label="Main Navigation">
+            <div id="nav-container">
+                <a href="index.html" id="logo">Wonsick Oh</a>
+                <ul id="navbar">
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="travel-gallery.html">Travel Gallery</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section id="filter-section" aria-label="Category Filters">
+            <h2>Category</h2>
+            <button onclick="filterImages('all')">Show All</button>
+            <button onclick="filterImages('nature')">Personal Photo</button>
+            <button onclick="filterImages('architecture')">UX Works</button>
+        </section>
+        <section id="gallery" aria-label="Image Gallery" role="region">
+            <!-- Add your images here -->
+            <div class="image-container" data-category="nature" role="group">
+                <img src="image/1.JPG" alt="In Korea" tabindex="0">
+            </div>
+            <div class="image-container" data-category="architecture" role="group">
+                <img src="image/3.png" alt="With friend in CALI" tabindex="0">
+            </div>
+            <div class="image-container" data-category="nature" role="group">
+                <img src="image/2.jpeg" alt="Tomocube Internship UX Work1" tabindex="0">
+            </div>
+            <div class="image-container" data-category="architecture" role="group">
+                <img src="image/4.png" alt="Tomocube Internship UX Work2" tabindex="0">
+            </div>
+        </section>
+        <div id="lightbox" tabindex="0" aria-hidden="true" role="dialog">
+            <span id="close-lightbox" onclick="closeLightbox()" aria-label="Close Lightbox">×</span>
+            <img id="lightbox-img" src="" alt="">
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Accessible Image Gallery</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

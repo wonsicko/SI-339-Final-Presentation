@@ -1,0 +1,280 @@
+/* Navigation Bar Styles */
+#nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #6200ea;
+    padding: 0.5em 1em;
+}
+
+#logo {
+    text-decoration: none;
+    color: white;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+#logo:hover {
+    text-decoration: underline;
+}
+
+#navbar {
+    list-style: none;
+    display: flex;
+    gap: 1.5em;
+    margin: 0;
+    padding: 0;
+}
+
+#navbar li {
+    margin: 0;
+}
+
+#navbar a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.1em;
+}
+
+#navbar a:hover {
+    text-decoration: underline;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+    text-align: center;
+}
+
+header {
+    background-color: #6200ea;
+    color: white;
+    padding: 1em 0;
+}
+
+h1 {
+    margin: 0;
+}
+
+main {
+    margin: 1em auto;
+    max-width: 900px;
+}
+
+#filter-section {
+    margin-bottom: 1em;
+}
+
+button {
+    margin: 0.5em;
+    padding: 0.5em 1em;
+    border: none;
+    border-radius: 4px;
+    background-color: #6200ea;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #3700b3;
+}
+
+#gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    justify-content: center;
+}
+
+.image-container {
+    width: 400px;
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#lightbox {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    align-items: center;
+    justify-content: center;
+}
+
+#lightbox img {
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 8px;
+}
+
+#close-lightbox {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: white;
+    font-size: 2em;
+    cursor: pointer;
+}
+
+
+/* About Page Styles */
+#about-header {
+    text-align: center;
+    padding: 2em 0;
+    background-color: #6200ea;
+    color: white;
+}
+
+#about-header h2 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+#about-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 2em auto;
+    max-width: 1200px;
+    padding: 0 1em;
+}
+
+#about-content .about-text {
+    flex: 1 1 50%;
+    padding: 1em;
+    font-size: 1.1em;
+    line-height: 1.6;
+    text-align: left; /* Align text to the left */
+}
+
+#about-content .about-images {
+    flex: 1 1 40%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    justify-content: center;
+}
+
+#about-content .image-container {
+    flex: 1 1 calc(50% - 1em);
+    width: auto;
+    height: auto;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#about-content .image-container img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* Travel Gallery Styles */
+#gallery-header {
+    text-align: center;
+    padding: 2em 0;
+    background-color: #6200ea;
+    color: white;
+}
+
+#gallery-header h2 {
+    margin: 0;
+    font-size: 2.5em;
+    font-weight: 600;
+}
+
+#gallery-header p {
+    margin-top: 1em;
+    font-size: 1.2em;
+    font-weight: 300;
+}
+
+#travel-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5em;
+    justify-content: center;
+    margin: 2em auto;
+    max-width: 1200px;
+    padding: 0 1em;
+}
+
+.travel-image-container {
+    flex: 1 1 calc(25% - 1em); /* Each image takes 25% of the row, minus spacing */
+    max-width: 250px; /* Ensure consistent width for all images */
+    text-align: center;
+}
+
+.travel-image-container img {
+    width: 100%;
+    height: 200px; /* Set a fixed height for all images */
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    object-fit: cover; /* Ensure the image fits within the height */
+}
+
+.travel-image-container p {
+    margin-top: 0.5em;
+    font-size: 1em;
+    color: #333;
+    font-weight: 300;
+}
+
+/* Lightbox Styles */
+#lightbox {
+    display: none; /* Hidden by default */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    align-items: center;
+    justify-content: center;
+    z-index: 1000; /* Ensure it appears above all other elements */
+}
+
+#lightbox img {
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+#lightbox p {
+    color: white;
+    margin-top: 1em;
+    font-size: 1.2em;
+    text-align: center;
+}
+
+#close-lightbox {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    color: white;
+    font-size: 2em;
+    font-weight: bold;
+    cursor: pointer;
+    z-index: 1001;
+}
+

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Gallery - Wonsick Oh</title>
+    <!-- Include Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav aria-label="Main Navigation">
+            <div id="nav-container">
+                <a href="index.html" id="logo">Wonsick Oh</a>
+                <ul id="navbar">
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="travel-gallery.html">Travel Gallery</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section id="gallery-header">
+            <h2>Travel Gallery</h2>
+            <p>Explore some of the incredible places I've visited through my travel photography.</p>
+        </section>
+        <section id="travel-gallery">
+            <!-- Add your travel images here -->
+            <div class="image-container">
+                <img src="image/travel1.jpeg" alt="Serene beach at sunset" data-full="image/full/travel1.jpeg">
+                <p>NewYork with Insun</p>
+            </div>
+            <div class="image-container">
+                <img src="image/travel2.jpeg" alt="Bustling market in Asia" data-full="image/full/travel2.jpg">
+                <p>Noguchi Museum in New Jersey</p>
+            </div>
+            <div class="image-container">
+                <img src="image/travel3.jpeg" alt="Breathtaking mountain view" data-full="image/full/travel3.jpg">
+                <p>Noguchi Museum in New Jersey2</p>
+            </div>
+            <div class="image-container">
+                <img src="image/travel4.jpeg" alt="Historic cityscape" data-full="image/full/travel4.jpg">
+                <p>Irvine</p>
+            </div>
+            <div class="image-container">
+                <img src="image/travel5.jpeg" alt="Historic cityscape" data-full="image/full/travel5.jpg">
+                <p>Vietnam Hanoi</p>
+            </div>
+            <div class="image-container">
+                <img src="image/travel6.jpeg" alt="Historic cityscape" data-full="image/full/travel6.jpg">
+                <p>LA</p>
+            </div>
+        </section>
+        
+        <!-- Lightbox Overlay -->
+        <div id="lightbox" tabindex="-1" aria-hidden="true">
+            <span id="close-lightbox" aria-label="Close">&times;</span>
+            <img id="lightbox-img" src="" alt="">
+            <p id="lightbox-caption"></p>
+        </div>
+        
+    <footer>
+        <p>&copy; 2024 Wonsick Oh</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
